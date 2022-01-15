@@ -1,1 +1,2 @@
+salo vono take
 # ansible
