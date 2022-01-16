@@ -1,0 +1,9 @@
+-
+  name: Deploy a web application
+  hosts: ubuntu_targets
+  become: yes
+  roles:
+    - flask
+    - mysql_db
+    - python
+

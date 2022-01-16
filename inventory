@@ -1,0 +1,8 @@
+#servers for ansible testing
+[ubuntu_targets]
+target1
+target2
+
+
+[centos_targets]
+target3

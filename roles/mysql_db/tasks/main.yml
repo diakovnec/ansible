@@ -1,0 +1,16 @@
+    - name: Install sql
+      apt:
+        name: '{{item}}'
+        state: absent
+      with_items: [mysql-server, mysql-client]
+
+    - name: Anable mysql
+      service:
+       name: mysql
+       state: started
+       enabled: yes         
+
+    - name: Create sql module
+      mysql_db:
+       name: "{{db_name}}"
+       state: absent
